@@ -1,0 +1,34 @@
+/*Шрифты*/
+@font-face {
+    font-family: gilroy-medium;
+    src: url("../../../font/gilroy-medium.ttf");
+}
+@font-face {
+    font-family: gilroy-bold;
+    src: url("../../../font/gilroy-bold.ttf");
+}
+@font-face {
+    font-family: gilroy-regular;
+    src: url("../../../font/gilroy-regular.ttf");
+}
+
+/*Тело страницы*/
+body{
+    padding: 0;
+    margin: 0;
+    background: #f6f4ff;
+}
+body::-webkit-scrollbar{
+    width: 0;
+}
+html {
+    overflow-x: hidden;
+}
+
+/*Текстовые селекторы*/
+a{
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    font-family: gilroy-regular;
+}

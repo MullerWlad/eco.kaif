@@ -1,0 +1,74 @@
+{
+    "eur-asia" : {
+        "water" : 0.03,
+        "climate" : 1,
+        "cancer" : 0.675,
+        "trading" : 0.7,
+        "factory" : 0.3,
+        "medicine" : 0.6,
+        "trash" : 0.3
+    },
+    "north-east-asia" : {
+        "water" : 0.26,
+        "climate" : 0.7,
+        "cancer" : 0.9,
+        "trading" : 0.9,
+        "factory" : 0.9,
+        "medicine" : 0.6,
+        "trash" : 0.2
+    },
+    "asia-and-pacific" : {
+        "water" : 0.12,
+        "climate" : 0.7,
+        "cancer" : 0.9,
+        "trading" : 0.9,
+        "factory" : 0.5,
+        "medicine" : 0.7,
+        "trash" : 0.7
+    },
+    "middle-east" : {
+        "water" : 0.17,
+        "climate" : 0.7,
+        "cancer" : 0.6,
+        "trading" : 0.6,
+        "factory" : 0.3,
+        "medicine" : 0.35,
+        "trash" : 0.4
+    },
+    "europe" : {
+        "water" : 0.16,
+        "climate" : 1,
+        "cancer" : 0.45,
+        "trading" : 0.9,
+        "factory" : 0.5,
+        "medicine" : 0.9,
+        "trash" : 0.8
+    },
+    "africa" : {
+        "water" : 0.01,
+        "climate" : 0.7,
+        "cancer" : 0.1125,
+        "trading" : 0.7,
+        "factory" : 0.1,
+        "medicine" : 0.05,
+        "trash" : 0.1
+    },
+    "central-south-america" : {
+        "water" : 0.04,
+        "climate" : 0.5,
+        "cancer" : 0.375,
+        "trading" : 0.7,
+        "factory" : 0.5,
+        "medicine" : 0.2,
+        "trash" : 0.3
+    },
+    "north-america" : {
+        "water" : 0.21,
+        "climate" : 1,
+        "cancer" : 0.375,
+        "trading" : 0.9,
+        "factory" : 0.7,
+        "medicine" : 0.9,
+        "trash" : 0.7
+    }
+}

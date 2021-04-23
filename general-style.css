@@ -1,0 +1,221 @@
+/*Класс горизонтальных межблочных флексбоксов*/
+.horizon-display-between{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Класс горизонтальных не межблочных флексбоксов*/
+.horizon-display-around{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Класс вертикальных центральных флексбоксов*/
+.vertical-display-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Класс горизонтальных центральных флексбоксов*/
+.horizon-display-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Класс вертикальных межблочных флексбоксов*/
+.vertical-display-between{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Класс вертикальных не межблочных флексбоксов*/
+.vertical-display-around{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@keyframes start {
+    from { opacity: 0; margin-left: -10vw; }
+    to { opacity: 1; margin-left: 0; }
+}
+
+@keyframes open {
+    from { opacity: 0; margin: -2vw 0 0 0; }
+    50% { margin: 0; }
+    75% { margin: -1vw 0 0 0; }
+    to { opacity: 1; margin: 0;}
+}
+
+/*Топбар*/
+.topbar-content-block {
+    width: 100%;
+    height: 5vw;
+    background: white;
+    box-shadow: 0 0 1vw #e2e5ff;
+    position: fixed;
+}
+.open {
+    animation: 1s ease-in-out open;
+}
+
+
+/*general content*/
+.general-content-block {
+    width: 100vw;
+    min-height: 100vh;
+    padding-top: 10vh;
+    animation: start 2s ease-in-out;
+}
+.form {
+    width: 35vw;
+    min-height: 0;
+    background: white;
+    border-radius: 1vw;
+    box-shadow: 0 0 1vw #e2e5ff;
+    padding: 3vw 0 3vw 0;
+    margin: 2vw;
+}
+.image-block {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("../../../img/list.png");
+    width: 5vw;
+    height: 5vw;
+    margin: 2vw 0 2vw 0;
+}
+.input-form {
+    width: 75%;
+    height: 3vw;
+    margin: 0.5vw;
+    outline: none;
+    border: none;
+    font-family: gilroy-regular;
+    transition-duration: 0.5s;
+    padding: 0 1vw 0 1vw;
+    border-radius: 1vw;
+    background: #ebf1ff;
+    color: #2846FE !important;
+}
+.input-form::placeholder {
+    color: #2846FE;
+    font-size: 1vw;
+    font-family: gilroy-medium;
+}
+.input-form:focus {
+    border-radius: 0.5vw;
+}
+.input-form::selection{
+    background: #2846FE;
+    color: white;
+}
+
+/*Треи выбора*/
+.select-form {
+    width: 75%;
+    margin: 0.7vw;
+    outline: none;
+    border: none;
+    font-family: gilroy-regular;
+    transition-duration: 0.5s;
+    padding: 0 1vw 0 1vw;
+    border-radius: 1vw;
+    background: #ebf1ff;
+    appearance: none;
+}
+.option-form {
+    width: 100%;
+    cursor: pointer;
+}
+.button-form::selection{
+    background: #2846FE;
+    color: white;
+}
+.button-form {
+    background: #2846FE;
+    margin: 0.7vw;
+    border: none;
+    transition-duration: 0.5s;
+    padding: 1vw 5vw 1vw 5vw;
+    border-radius: 1vw;
+    cursor: pointer;
+    user-select: none;
+}
+.button-form:hover {
+    background: #697aff;
+}
+.indicator-block {
+    width: 78%;
+    height: 2vw;
+    background: #ebf1ff;
+    padding: 0 1vw 0 0;
+    margin: 2vw 0 2vw 0;
+    border-radius: 0.5vw;
+}
+.indicator {
+    height: 100%;
+    border-radius: 0.5vw;
+    padding: 0 0 0 1vw;
+}
+.indicator-green {
+    background: #7fff7f;
+}
+.indicator-yellow {
+    background: #ffffaa;
+}
+.indicator-red {
+    background: #ffa7a7;
+}
+
+/*Футер*/
+.footer-content-block {
+    width: 100%;
+    height: 5vw;
+    background: white;
+    border-top: #dedede 0.3vmin solid;
+}
+
+/*Цвет шрифта*/
+.text-black {
+    color: black;
+}
+.text-blue {
+    color: #2846FE;
+}
+.text-white {
+    color: white;
+}
+
+/*Размер теста*/
+.text-size-easy {
+    font-size: 1vw;
+}
+.text-size-medium {
+    font-size: 1.5vw;
+}
+.text-size-hard {
+    font-size: 2vw;
+}
+
+/*Классы шрифтов*/
+.gilroy-medium {
+    font-family: gilroy-medium;
+}
+.gilroy-regular {
+    font-family: gilroy-regular;
+}
+.gilroy-bold {
+    font-family: gilroy-bold;
+}

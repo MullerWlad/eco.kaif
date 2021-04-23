@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!--meta tags-->
+    <meta charset="UTF-8">
+
+    <!--links-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="../script/general-script.js"></script>
+    <link rel="stylesheet" href="../style/usual-style/general-style.css">
+    <link rel="stylesheet" href="../style/usual-style/fixed-properties.css">
+    <link rel="stylesheet" media="screen and (color)" href="../style/media-queries/media-phone.css">
+    <link rel="shortcut icon" href="../../img/list.png">
+
+    <!--another-->
+    <title>eco.kaif</title>
+
+</head>
+<body>
+    <!--topbar-->
+    <div class="horizon-display-center topbar-content-block">
+        <p class="open text-blue text-size-hard gilroy-medium">eco<span class="text-black">.kaif</span></p>
+    </div>
+
+    <!--general-content-->
+    <div class="general-content-block vertical-display-center">
+        <div class="form vertical-display-around">
+            <div class="image-block"></div>
+            <div class="indicator-block horizon-display-between"></div>
+            <input class="input-form text-size-easy text-black" id="elem" placeholder="Введите полное число лет">
+            <div class="select-form vertical-display-center">
+                <p class="option-form text-blue text-size-easy gilroy-medium">Выберите регион мира</p>
+                <p class="option-form text-blue text-size-easy gilroy-medium">eurasia</p>
+                <p class="option-form text-blue text-size-easy gilroy-medium">north east asia</p>
+                <p class="option-form text-blue text-size-easy gilroy-medium">asia and pacific</p>
+                <p class="option-form text-blue text-size-easy gilroy-medium">middle east</p>
+                <p class="option-form text-blue text-size-easy gilroy-medium">europe</p>
+                <p class="option-form text-blue text-size-easy gilroy-medium">africa</p>
+                <p class="option-form text-blue text-size-easy gilroy-medium">central south america</p>
+                <p class="option-form text-blue text-size-easy gilroy-medium">north america</p>
+            </div>
+            <p class="button-form text-size-easy text-white gilroy-medium result">Рассчитать</p>
+        </div>
+
+        <div class="form vertical-display-around query">
+            <p class="gilroy-medium text-blue text-size-easy">Не разогревайте еду в пластике в микроволновке</p>
+            <p class="gilroy-medium text-blue text-size-easy">Старайтесь не пить воду из пластиковых бутылок</p>
+            <p class="gilroy-medium text-blue text-size-easy">Откажитесь от одноразовых пластиковых изделий</p>
+            <p class="gilroy-medium text-blue text-size-easy">Регулярно пылесосьте дома</p>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="horizon-display-center footer-content-block">
+        <p class="text-blue text-size-easy gilroy-bold" id="place">© Chehov-sntk 2021 - {{ message }}</p>
+    </div>
+
+    <script>
+        /*Дата для Футера*/
+        new Vue({
+            el: '#place',
+            data: {
+                message: new Date().getFullYear(),
+            },
+        })
+    </script>
+</body>
+</html>
